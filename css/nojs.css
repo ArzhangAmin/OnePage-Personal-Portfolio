@@ -1,0 +1,14 @@
+body {
+    overflow: auto;
+}
+#site-loading, #cv-left-slider{
+	display: none !important;
+}
+.floor {
+    padding-left: 5em !important;
+}
+@media only screen and (max-width: 480px) {
+    .floor {
+        padding-left: 3.5em !important;
+    }
+}

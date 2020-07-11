@@ -1,0 +1,569 @@
+/* ---------------------- 
+Stylesheet Guide
+-------------------------
+
+FONTS
+GENERAL STYLES
+FORMS
+LOADING ANIMATION
+PAGE STRUCTURE
+MAIN MENU
+SIDEBAR
+SUBMENU
+FLICKR FEED
+HOMEPAGE
+HOME SOCIAL BAR
+CV TABLE
+ICON CONTAINERS
+SKILLS
+PORTFOLIO
+LIGHTGALLERY
+TOOLTIPS
+TESTIMONIALS
+ACCORDION
+BLOG
+TABS
+FLEX IMAGE
+CV BOXES
+YOUTUBE VIDEO
+FOOTER
+
+*/
+/* ================= GENERAL STYLES  ================== */
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #de3926;
+}
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #de3926;
+}
+body {
+    background-color: #fff;
+    color: #949494;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #222;
+}
+h1.border:after,
+h2.border:after,
+h3.border:after,
+h4.border:after,
+h5.border:after,
+h6.border:after {
+    background-color: #de3926;
+}
+p {
+    color: #949494;
+}
+a {
+    color: #222;
+}
+a:hover {
+    color:#de3926;
+}
+.label {
+    background-color: #f3f3f3;
+    border-left: 3px solid #de3926;
+}
+blockquote {
+    background: #f3f3f3;
+}
+blockquote:before {
+	background-color: #de3926;
+    border:5px solid #fff;
+    color:#fff;
+}
+hr {
+    background-color: #f3f3f3;
+}
+.floor {
+    background-color: #fff;
+}
+/* ================= FORMS ================== */
+input,
+textarea {
+    background-color: #fff;
+    border: 1px solid #f3f3f3;
+    color: #949494;
+}
+input:focus,
+textarea:focus {
+    background-color: #f3f3f3;
+    color: #222;
+}
+.cv-button {
+    background-color: #fff;
+    border: 3px solid #222;
+	color: #222;
+}
+.cv-button.primary {
+    background-color: #222;
+    color:#fff;
+}
+.cv-button:hover {
+    background-color: #de3926;
+    border: 3px solid #de3926;
+    color:#fff;
+}
+#cv-sidebar input,#cv-sidebar textarea {
+    color: #949494;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+#cv-sidebar input:focus,#cv-sidebar textarea:focus {
+    color: #fff;
+}
+#cv-sidebar .cv-button {
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+#cv-sidebar .cv-button:hover {
+    background-color: #222;
+}
+.searchbox .cv-button {
+    border-left:1px solid #333 !important;
+}
+.searchbox .cv-button:hover {
+    border-left:1px solid #222 !important;
+}
+/* ================= LOADING ANIMATION ================== */
+#site-loading{
+    background-color: #222; 
+}
+/* ================= PAGE STRUCTURE ================== */
+.cv-page-content {
+    border-bottom: 50px solid #fff;
+}
+#cv-page-right {
+    background-color: #fff;
+}
+/* ================= MAIN MENU ================== */
+#cv-menu{
+    background-color: #222;
+}
+#cv-main-menu ul li a {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+#cv-main-menu ul li:first-child a {
+    background: #de3926;
+}
+/* ================= SIDEBAR ================== */
+#cv-sidebar {
+    background-color: #333;
+}
+#cv-sidebar h1, #cv-sidebar h2, #cv-sidebar h3, #cv-sidebar h4, #cv-sidebar h5, #cv-sidebar h6{
+    color:#fff;
+}
+#cv-sidebar, #cv-sidebar p{
+    color:#949494;
+}
+.cv-sidebar-title {
+    background-color:rgba(255, 255, 255, 0.05);
+}
+.cv-sidebar-title:before {
+    border-top-color: rgba(255, 255, 255, 0.05) !important;
+}
+.cv-sidebar-list li a {
+    color: #949494;
+}
+.cv-sidebar-list li a:hover{
+    color: #fff;
+}
+.cv-sidebar-list li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.cv-tags {
+    color: #fff;
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.cv-tags:hover,.sidebar-tags .tags:hover {
+    color: #fff;
+    background-color: #de3926;
+}
+.cv-sidebar-post-title{
+    color: #949494;
+}
+.cv-sidebar-post-title:hover{
+    color: #fff;
+}
+.cv-sidebar-posts li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.cv-sidebar-posts li img {
+    border:3px solid rgba(255, 255, 255, 0.05);
+}
+.cv-sidebar-posts li img:hover {
+    border:3px solid #fff;
+}
+/* ================= SUBMENU ================== */
+.cv-submenu ul li a {
+    color: #949494;
+}
+.cv-submenu ul li a:hover {
+    color: #fff;
+}
+.cv-submenu ul ul {
+    border-left: 3px solid rgba(255, 255, 255, 0.05);
+}
+.cv-submenu ul ul a{
+    color:#949494;
+}
+.cv-submenu ul > li > a.cvdropdown2 {
+    color: #fff;
+}
+/* ================= FLICKR FEED ================== */
+.cv-flickr-box li img {
+    border:3px solid rgba(255, 255, 255, 0.05);
+}
+.cv-flickr-box li img:hover {
+    border:3px solid #fff;
+}
+/* ================= HOMEPAGE ================== */
+#home-title h1 span{
+    color:#fff;
+    background-color: #222;
+}
+#home-slide-title span, #home-title h1 .mobile-title{
+    color:#fff;
+    background-color: #de3926;
+}
+#home-title p{
+    color: #222;
+    background-color: #fff;
+}
+/* ================= HOME SOCIAL BAR ================== */
+#cv-home-social-bar ul li a {
+    color: #222;
+    border-right: 1px solid #f3f3f3;
+    background-color: #fff;
+}
+#cv-home-social-bar ul li a:hover {
+    color: #de3926;
+}
+/* ================= CV TABLE ================== */
+.cv-table li {
+    color: #949494;
+}
+.cv-table li {
+    border-bottom: 1px solid #f3f3f3;
+}
+.cv-box .cv-table li {
+    border-bottom: 1px solid #fff;
+}
+.cv-table li:first-child {
+    border-top: 1px solid #f3f3f3;
+}
+.cv-box .cv-table li:first-child {
+    border-top: 1px solid #fff;
+}
+.cv-table .cv-table-title {
+    color: #222;
+}
+/* ================= ICON CONTAINERS ================== */
+.cv-icon-container {
+    background-color: #f3f3f3;
+}
+.cv-icon-container a {
+    color:#949494;
+}
+.cv-icon-container a:before {
+    color:#949494;
+}
+/* ================= SKILLS ================== */
+.skillbar {
+    background-color: #fff;
+    border:1px solid #f3f3f3;
+}
+.skillbar-title {
+    color:#949494;
+}
+.skillbar-bar {
+    background-color: #f3f3f3;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.01) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.01) 50%, rgba(0, 0, 0, 0.01) 75%, transparent 75%, transparent);
+}
+.skill-bar-percent {
+	color:#949494;
+}
+/* ================= SKILLS ================== */
+.cv-resume-title {
+    border-bottom: 1px solid #f3f3f3;
+}
+/* ================= PORTFOLIO ================== */
+.cvgrid li figure figcaption {
+    background-color: #f3f3f3;
+}
+.cvfilters li {
+    color: #949494;
+    background-color: #f3f3f3;
+}
+.cvfilters li:hover {
+    color:#222;
+}
+.cvfilters li.gridactive {
+    color:#fff;
+    background-color: #de3926;
+}
+.cvfilters li.gridactive:hover {
+    color:#fff;
+}
+.cvgrid li figure figcaption .cvgrid-title {
+    color: #949494;
+}
+.cvgrid > li > figure > a:after {
+    color:#fff;
+    background-color: #de3926;
+}
+/* ================= LIGHTGALLERY ================== */
+.lg-actions .lg-next, .lg-actions .lg-prev {
+    background-color: rgba(34, 34, 34, 0.5);
+    color: #949494;
+}
+.lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
+    color: #fff;
+}
+.lg-toolbar {
+    background-color: rgba(34, 34, 34, 0.5);
+}
+.lg-toolbar .lg-icon {
+    color: #949494;
+}
+.lg-toolbar .lg-icon:hover {
+    color: #fff;
+}
+.lg-sub-html {
+    background-color: rgba(34, 34, 34, 0.5);
+    color: #fff;
+}
+#lg-counter {
+    color: #949494;
+}
+.lg-outer .lg-thumb-outer {
+    background-color: #333;
+}
+.lg-outer .lg-toogle-thumb {
+    background-color: #333;
+    color: #949494;
+}
+.lg-outer .lg-toogle-thumb:hover {
+    color: #fff;
+}
+.lg-progress-bar {
+    background-color: #333;
+}
+.lg-progress-bar .lg-progress {
+    background-color: #de3926;
+}
+.lg-backdrop {
+    background-color: #222;
+}
+/* ================= TOOLTIPS ================== */
+.tooltipster-light {
+	background: #fff;
+	color: #222;
+}
+.tooltipster-dark,.tooltipster-gototop {
+	background: #222;
+	color: #fff;
+}
+.tooltipster-red {
+	background: #de3926;
+	color: #fff;
+}
+/* ================= TESTIMONIALS ================== */
+.quovolve-nav a {
+    background: #f3f3f3;
+    color: #949494;
+}
+.quovolve-nav a:hover {
+    background: #f3f3f3;
+      color:#222;
+}
+.nav-numbers li a:hover {
+    color:#222;
+    background: #f3f3f3;
+}
+.nav-numbers li.active a{
+    color:#fff;
+    background: #222;
+}
+/* ================= ACCORDION  ================== */
+#accordion-container {
+	border-top: 1px solid #f3f3f3;
+}
+.accordion-header {
+	border-bottom: 1px solid #f3f3f3;
+}
+.accordion-header:hover {
+	color:#222;
+}
+.active-header {
+	color:#222;
+}
+.accordion-content {
+	border-bottom: 1px solid #f3f3f3;
+}
+/* ================= BLOG ================== */
+.blog-img {
+    background-color: #f3f3f3;
+}
+.blog-img-caption h4{
+    color:#fff;
+}
+.blog-img-caption h4 {
+    background: #222;
+}
+.blog-img:hover .blog-img-caption h4{
+    background: #de3926;
+}
+.blogcontainer .postdate {
+    background-color: #f3f3f3;
+}
+.cv-readmore {
+    color: #949494;
+}
+.cv-readmore:hover {
+    color: #fff;
+    background-color: #222;
+}
+.blogpager .previous, .blogpager .next{
+    background-color: #f3f3f3;
+}
+.blogpager .cv-button {
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+    color:#222;
+}
+.blogpager .cv-button:hover {
+    background-color: #f3f3f3;
+    border: 3px solid #f3f3f3;
+    color:#de3926;
+}
+.comments_content {
+    background-color: #f3f3f3;
+}
+.comments_content:before {
+    border-bottom-color: #f3f3f3; !important;
+}
+.reply:before {
+    color: #222;
+}
+/* ================= TABS ================== */
+.resp-tab-active {
+    border-top: 3px solid #de3926 !important;
+}
+.resp-tabs-list li:hover {
+    background-color: #f3f3f3;
+}
+.resp-tabs-list li.resp-tab-active {
+    background-color: #f3f3f3;
+}
+.resp-tabs-container {
+    background-color: #f3f3f3;
+}
+.resp-tab-active {
+    background-color: #f3f3f3;
+}
+/*-----------Vertical tabs-----------*/
+
+.resp-vtabs .resp-tabs-list li:hover {
+    background-color: #f3f3f3;
+    border-left: 3px solid #de3926;
+}
+.resp-vtabs .resp-tabs-list li.resp-tab-active {
+    background-color: #f3f3f3;
+    border-left: 3px solid #de3926;
+}
+h2.resp-tab-active {
+    background-color: #f3f3f3;
+}
+@media only screen and (max-width: 640px) {
+    .resp-tab-active {
+        background-color: #de3926 !important;
+        color: #fff !important;
+    }
+}
+/* ================= FLEX IMAGE ================== */
+.caption-image img {
+    border:10px solid #f3f3f3;
+}
+.caption-image figcaption {
+    background-color:rgba(243,243,243,0.9);
+}
+/* ================= CV BOXES ================== */
+.cv-box.cv-light {
+    background-color: #f3f3f3;
+    border-left: 5px solid rgba(0,0,0,0.05);
+}
+.cv-box.cv-dark {
+    background-color: #222;
+    border-left: 5px solid rgba(255,255,255,0.1);
+}
+.cv-box.cv-red {
+    background-color: #de3926;
+    border-left: 5px solid rgba(0,0,0,0.05);
+}
+.cv-box-title {
+    color:#222;
+}
+.cv-box.cv-dark .cv-box-title,.cv-box.cv-red .cv-box-title{
+    color:#fff;
+}
+.cv-box.cv-red p{
+    color:#fff;
+}
+/* ================= YOUTUBE VIDEO ================== */
+.mb_YTPBar,.mb_YTPBar span.mb_YTPUrl a{
+    color:#fff
+}
+.mb_YTPlayer .loading{
+    color:#fff;
+    background:#333;
+}
+.inline_YTPlayer{
+    background:#333;
+}
+.mb_YTPBar{
+    background:#333;
+}
+.mb_YTPBar:hover .buttonBar{
+    background:#333
+}
+.mb_YTPBar .mb_YTPProgress{
+    background:#222;
+}
+.mb_YTPBar .mb_YTPLoaded{
+    background:#444;
+}
+.mb_YTPBar .mb_YTPseekbar{
+    background:#de3926;
+}
+.mb_YTPBar .simpleSlider{
+    border:1px solid #fff;
+}
+.mb_YTPBar .level{
+    background-color:#fff;
+}
+#cv-page-left{
+    background-color:#333;
+}
+/* ================= FOOTER ================== */
+#footer {
+    background-color: rgba(243,243,243,0.9);
+}
+.cv-credits a {
+    color: #949494;
+}
+.cv-credits a:hover {
+    color:#222;
+}
+#cv-back-to-top:before {
+    color:#949494;
+}
+#cv-back-to-top:hover:before {
+    color:#222;
+}
