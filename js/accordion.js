@@ -13,3 +13,22 @@ jQuery(document).ready(function () {
     });
     return false;
 });
+// this one is just to wait for the page to load
+document.addEventListener('DOMContentLoaded', () => {
+
+    const themeStylesheet = document.getElementById('theme');
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        // if it's light -> go dark
+        if(themeStylesheet.href.includes('light')){
+            themeStylesheet.href = 'dark-theme.css';
+            themeToggle.innerText = 'Dark mode: ON';
+            
+        } else {
+            // if it's dark -> go light
+            themeStylesheet.href = 'light-theme.css';
+            themeToggle.innerText = 'Dark mode: OFF';
+
+        }
+    })
+})
