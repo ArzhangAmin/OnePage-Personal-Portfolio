@@ -31,6 +31,30 @@ CV BOXES
 FOOTER
 
 */
+
+#theme-toggle {
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    border: solid #111 2px;
+    text-decoration: none;
+  }
+
+#theme-toggle:hover {
+    background: #000;
+    background-image: -webkit-linear-gradient(top, #000, #000);
+    background-image: -moz-linear-gradient(top, #000, #000);
+    background-image: -ms-linear-gradient(top, #000, #000);
+    background-image: -o-linear-gradient(top, #000, #000);
+    background-image: linear-gradient(to bottom, #000, #000);
+    text-decoration: none;
+  }
+
 /* ================= FONTS ================== */
 @font-face {
     font-family: 'ralewaybold';
